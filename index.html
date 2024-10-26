@@ -1,83 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Kevk1ng</title>
+    <title>Kevk1ng - Programador Junior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <label class="container">
-    <input checked="checked" type="checkbox" />
-    <div class="checkmark"></div>
-    <div class="torch">
-        <div class="head">
-        <div class="face top">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <header>
+        <div class="profile-container">
+            <img src="/placeholder.svg?height=200&width=200" alt="Tu foto de perfil" class="profile-photo">
+            <div>
+                <h1 id="nombre" style="font-family: 'Libre Barcode 39', cursive;">********</h1>
+                <p>Programador Junior</p>
+            </div>
         </div>
-        <div class="face left">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="face right">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        </div>
-        <div class="stick">
-        <div class="side side-left">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="side side-right">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        </div>
-    </div>
-    </label>
-    <div id="codigo">
-        <span id="name" class="codigo-barra">Kevk1ng</span>
-    </div>
+    </header>
+    <main>
+        <section id="competencias">
+            <h2>Competencias</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Diseño Responsivo</li>
+                <li>Control de versiones con Git</li>
+                <li>Fundamentos de React</li>
+            </ul>
+            <div class="competencias-grid">
+                <div class="competencia-item">
+                    <img src="/placeholder.svg?height=50&width=50&text=HTML" alt="HTML" class="competencia-icon">
+                    <p>HTML</p>
+                </div>
+                <div class="competencia-item">
+                    <img src="/placeholder.svg?height=50&width=50&text=CSS" alt="CSS" class="competencia-icon">
+                    <p>CSS</p>
+                </div>
+                <div class="competencia-item">
+                    <img src="/placeholder.svg?height=50&width=50&text=JS" alt="JavaScript" class="competencia-icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="competencia-item">
+                    <img src="/placeholder.svg?height=50&width=50&text=Git" alt="Git" class="competencia-icon">
+                    <p>Git</p>
+                </div>
+            </div>
+        </section>
+        <section id="vision">
+            <h2>Visión</h2>
+            <p>Convertirme en un desarrollador full-stack reconocido, creando soluciones innovadoras que impacten positivamente en la vida de las personas.</p>
+        </section>
+        <section id="mision">
+            <h2>Misión</h2>
+            <p>Desarrollar aplicaciones web de alta calidad, aprendiendo continuamente nuevas tecnologías y mejores prácticas para ofrecer soluciones eficientes y creativas.</p>
+        </section>
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p>Programador Junior | Bootcamp de Desarrollo Web Full-Stack</p>
+            <p>Tecnologías aprendidas: HTML, CSS, JavaScript, Fundamentos de React, Node.js, Express, MongoDB</p>
+        </section>
+    </main>
 </body>
 </html>
