@@ -52,3 +52,42 @@ window.addEventListener('load', () => {
     decryptName();
 });
 window.addEventListener('scroll', checkVisibility);
+
+function initCarousel() {
+    const track = document.querySelector('.carousel-track');
+    let isScrolling = false;
+
+    window.addEventListener('wheel', (e) => {
+        if (!isScrolling) {
+            isScrolling = true;
+            if (e.deltaY !== 0) {
+                track.scrollLeft += e.deltaY;
+                e.preventDefault();
+            }
+            setTimeout(() => {
+                isScrolling = false;
+            }, 66);
+        }
+    }, { passive: false });
+    
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('touchmove', (e) => {
+        if (!startX) return;
+        const x = e.touches[0].pageX - track.offsetLeft;
+        const walk = (x - startX) * 2;
+        track.scrollLeft = scrollLeft - walk;
+    });
+
+    track.addEventListener('touchend', () => {
+        startX = null;
+    });
+}
+
+window.addEventListener('load', initCarousel);

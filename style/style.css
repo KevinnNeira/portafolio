@@ -129,3 +129,58 @@ li::before {
         height: 150px;
     }
 }
+
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari y Opera */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.proyecto-card {
+  flex: 0 0 300px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto-imagen {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.proyecto-card h3 {
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-card p {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .proyecto-card {
+      flex: 0 0 250px;
+  }
+}
