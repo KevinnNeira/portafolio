@@ -9,75 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="storage/imgs/160855637.jpg" class="profile-photo">
-            <div>
-                <h1 id="nombre" style="font-family: 'Libre Barcode 39', cursive;">********</h1>
-                <p>Programador Junior</p>
-            </div>
-        </div>
-    </header>
-    
     <main>
+        <section id="sobre-mi">
+            <div class="profile-container">
+                <img src="storage/imgs/160855637.jpg" alt="Foto de perfil de Kevk1ng" class="profile-photo">
+                <div>
+                    <h1 id="nombre">Kevk<span class="highlight">1</span>ng</h1>
+                    <p>Programador Junior</p>
+                </div>
+            </div>
+            <div class="bio">
+                <h2>Sobre Mí</h2>
+                <p>Soy un apasionado programador junior con experiencia en desarrollo web full-stack. Mi objetivo es crear soluciones innovadoras que impacten positivamente en la vida de las personas.</p>
+            </div>
+        </section>
+
         <section id="competencias">
             <h2>Competencias</h2>
             <div class="competencias-grid">
                 <div class="espacio3D" id="espacio3D">
                     <div class="cubo3D" id="cubo3D">
                         <div class="base"></div>
-                        <aside class="cara cara1">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <rect width="100" height="100" fill="#e44d26"/>
-                                <text x="50" y="50" text-anchor="middle" fill="#fff" font-size="10">HTML/CSS</text>
-                            </svg>
-                        </aside>
-                        <aside class="cara cara2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <text x="50" y="50" text-anchor="middle" fill="#fff" font-size="10">MongoDB</text>
-                            </svg>
-                        </aside>
-                        <aside class="cara cara3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <rect width="100" height="100" fill="#F7DF1E"/>
-                                <text x="50" y="50" text-anchor="middle" fill="#000" font-size="10">JavaScript</text>
-                            </svg>
-                        </aside>
-                        <aside class="cara cara4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#F05032"/>
-                                <text x="50" y="50" text-anchor="middle" fill="#fff" font-size="10">Git</text>
-                            </svg>
-                        </aside>
-                        <aside class="cara cara5">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <!-- SVG para React -->
-                                <circle cx="50" cy="50" r="40" fill="#61DAFB"/>
-                                <text x="50" y="50" text-anchor="middle" fill="#000" font-size="10">React</text>
-                            </svg>
-                        </aside>
-                        <aside class="cara cara6">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <!-- SVG para Node.js -->
-                                <rect width="100" height="100" fill="#8CC84B"/>
-                                <text x="50" y="50" text-anchor="middle" fill="#fff" font-size="10">Node.js</text>
-                            </svg>
-                        </aside>
+                        <aside class="cara cara1">HTML/CSS</aside>
+                        <aside class="cara cara2">MongoDB</aside>
+                        <aside class="cara cara3">JavaScript</aside>
+                        <aside class="cara cara4">Git</aside>
+                        <aside class="cara cara5">React</aside>
+                        <aside class="cara cara6">Node.js</aside>
                     </div>
-                </div>
-                
                 </div>
             </div>
         </section>
         
-        <section id="vision">
-            <h2>Visión</h2>
-            <p>Convertirme en un desarrollador full-stack reconocido, creando soluciones innovadoras que impacten positivamente en la vida de las personas.</p>
-        </section>
-        
-        <section id="mision">
-            <h2>Misión</h2>
-            <p>Desarrollar aplicaciones web de alta calidad, aprendiendo continuamente nuevas tecnologías y mejores prácticas para ofrecer soluciones eficientes y creativas.</p>
+        <section id="vision-mision">
+            <div class="vision">
+                <h2>Visión</h2>
+                <p>Convertirme en un desarrollador full-stack reconocido, creando soluciones innovadoras que impacten positivamente en la vida de las personas.</p>
+            </div>
+            <div class="mision">
+                <h2>Misión</h2>
+                <p>Desarrollar aplicaciones web de alta calidad, aprendiendo continuamente nuevas tecnologías y mejores prácticas para ofrecer soluciones eficientes y creativas.</p>
+            </div>
         </section>
         
         <section id="educacion">
@@ -85,43 +57,47 @@
             <p>Programador Junior | Bootcamp de Desarrollo Web Full-Stack</p>
             <p>Tecnologías aprendidas: HTML, CSS, JavaScript, Fundamentos de React, Node.js, Express, MongoDB</p>
         </section>
-    </main>
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <div class="proyecto-card">
-                    <img src="/placeholder.svg?height=200&width=300&text=Proyecto+1" class="proyecto-imagen">
-                    <h3>Proyecto 1</h3>
-                    <p>Una aplicación web responsive utilizando HTML, CSS y JavaScript.</p>
-                </div>
-                <div class="proyecto-card">
-                    <img src="/placeholder.svg?height=200&width=300&text=Proyecto+2" class="proyecto-imagen">
-                    <h3>Proyecto 2</h3>
-                    <p>Un sitio de comercio electrónico con carrito de compras funcional.</p>
-                </div>
-                <div class="proyecto-card">
-                    <img src="/placeholder.svg?height=200&width=300&text=Proyecto+3" class="proyecto-imagen">
-                    <h3>Proyecto 3</h3>
-                    <p>Una aplicación de lista de tareas con almacenamiento local.</p>
-                </div>
-                <div class="proyecto-card">
-                    <img src="/placeholder.svg?height=200&width=300&text=Proyecto+4" class="proyecto-imagen">
-                    <h3>Proyecto 4</h3>
-                    <p>Un portafolio personal interactivo con animaciones suaves.</p>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="proyecto-card">
+                        <img src="/placeholder.svg?height=200&width=300&text=Proyecto+1" alt="Imagen del Proyecto 1" class="proyecto-imagen">
+                        <h3>Proyecto 1</h3>
+                        <p>Una aplicación web responsive utilizando HTML, CSS y JavaScript.</p>
+                    </div>
+                    <div class="proyecto-card">
+                        <img src="/placeholder.svg?height=200&width=300&text=Proyecto+2" alt="Imagen del Proyecto 2" class="proyecto-imagen">
+                        <h3>Proyecto 2</h3>
+                        <p>Un sitio de comercio electrónico con carrito de compras funcional.</p>
+                    </div>
+                    <div class="proyecto-card">
+                        <img src="/placeholder.svg?height=200&width=300&text=Proyecto+3" alt="Imagen del Proyecto 3" class="proyecto-imagen">
+                        <h3>Proyecto 3</h3>
+                        <p>Una aplicación de lista de tareas con almacenamiento local.</p>
+                    </div>
+                    <div class="proyecto-card">
+                        <img src="/placeholder.svg?height=200&width=300&text=Proyecto+4" alt="Imagen del Proyecto 4" class="proyecto-imagen">
+                        <h3>Proyecto 4</h3>
+                        <p>Un portafolio personal interactivo con animaciones suaves.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
+        </section>
+    </main>
+
+    <footer id="contacto">
         <div class="footer-container">
-            <h2>Contact Me</h2>
+            <h2>Contáctame</h2>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/kevin-neira-57a309319/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/KevinnNeira" target="_blank">GitHub</a>
-                <a href="/ruta/a/tu-hoja-de-vida.pdf" target="_blank">Hoja de Vida</a>
+                <a href="https://www.linkedin.com/in/kevin-neira-57a309319/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/KevinnNeira" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="/ruta/a/tu-hoja-de-vida.pdf" target="_blank" rel="noopener noreferrer">Hoja de Vida</a>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
