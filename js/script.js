@@ -47,12 +47,6 @@ function decryptName() {
     }, 200);
 }
 
-window.addEventListener('load', () => {
-    checkVisibility();
-    decryptName();
-});
-window.addEventListener('scroll', checkVisibility);
-
 function initCarousel() {
     const track = document.querySelector('.carousel-track');
     let isScrolling = false;
@@ -90,4 +84,39 @@ function initCarousel() {
     });
 }
 
-window.addEventListener('load', initCarousel);
+window.addEventListener('load', () => {
+    checkVisibility();
+    decryptName();
+    initCarousel();
+});
+window.addEventListener('scroll', checkVisibility);
+const cubo = document.getElementById('cubo3D');
+let isDragging = false;
+let startX, startY;
+let rotationY = 0;
+let rotationX = 0;
+
+cubo.addEventListener('mousedown', (event) => {
+    isDragging = true;
+    startX = event.clientX;
+    startY = event.clientY;
+});
+
+document.addEventListener('mousemove', (event) => {
+    if (isDragging) {
+        const dx = event.clientX - startX;
+        const dy = event.clientY - startY;
+
+        rotationY += dx * 0.5; // Ajusta la sensibilidad de la rotación
+        rotationX -= dy * 0.5; // Ajusta la sensibilidad de la rotación
+
+        cubo.style.transform = `translateZ(-150px) rotateY(${rotationY}deg) rotateX(${rotationX}deg)`;
+        
+        startX = event.clientX; // Actualiza la posición inicial
+        startY = event.clientY; // Actualiza la posición inicial
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+});
