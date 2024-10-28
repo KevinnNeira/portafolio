@@ -243,3 +243,47 @@ aside.cara7 {
 aside.cara8 {
     transform: rotateZ(-90deg) translateZ(150px);
 }
+
+footer {
+    color: var(--color-text);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #8e24aa; 
+}
+
+@media (max-width: 600px) {
+    #contact {
+        padding: 1rem;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
