@@ -107,13 +107,13 @@ document.addEventListener('mousemove', (event) => {
         const dx = event.clientX - startX;
         const dy = event.clientY - startY;
 
-        rotationY += dx * 0.5; // Ajusta la sensibilidad de la rotación
-        rotationX -= dy * 0.5; // Ajusta la sensibilidad de la rotación
+        rotationY += dx * 0.5;
+        rotationX -= dy * 0.5;
 
         cubo.style.transform = `translateZ(-150px) rotateY(${rotationY}deg) rotateX(${rotationX}deg)`;
         
-        startX = event.clientX; // Actualiza la posición inicial
-        startY = event.clientY; // Actualiza la posición inicial
+        startX = event.clientX;
+        startY = event.clientY;
     }
 });
 
